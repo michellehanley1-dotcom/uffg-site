@@ -414,3 +414,18 @@ section{padding:92px 0}
 /* browser default is `figure{margin:1em 40px}` — reset it */
 figure,figure.shot{margin:0}
 blockquote{margin:0}
+
+
+/* ---- brand lockup, corrected ---- */
+.brand{gap:12px;align-items:center}
+.brand img.mark{height:38px}
+.brand .bname{
+  font-size:.78rem;font-weight:600;letter-spacing:.15em;line-height:1;
+  text-transform:uppercase;color:var(--ink);white-space:nowrap;
+  padding-top:1px;
+}
+@media (max-width:1080px){.brand .bname{display:none}}
+@media (max-width:720px){.brand img.mark{height:34px}}
+
+/* footer mark: freestanding letters, given room to breathe */
+.site-footer img.f-lockup{margin-bottom:4px;opacity:.95}
