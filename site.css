@@ -314,3 +314,103 @@ section{padding:92px 0}
   .lb{padding:16px}
   .lb-nav{font-size:1.8rem;padding:8px 10px}
 }
+
+
+/* ============ added: square-mark header, photo band, proof, quote, swatches ============ */
+
+/* header: square stamp + name */
+.brand{gap:13px}
+.brand img.mark{height:44px;width:auto}
+.brand .bname{
+  font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--ink);line-height:1.25;white-space:nowrap;
+}
+.brand:hover{text-decoration:none}
+.hdr-phone{
+  margin-left:auto;display:flex;align-items:center;gap:8px;
+  font-size:.86rem;font-weight:600;letter-spacing:.02em;color:var(--ink);white-space:nowrap;
+}
+.hdr-phone:hover{color:var(--green);text-decoration:none}
+.nav{margin-left:28px}
+@media (max-width:980px){
+  .brand .bname{display:none}
+  .hdr-phone{font-size:.8rem}
+}
+@media (max-width:720px){
+  .brand img.mark{height:36px}
+  .hdr-phone{margin-left:auto;margin-right:12px}
+  .nav-toggle{margin-left:0}
+}
+
+/* full-bleed photo band */
+.photoband{position:relative;overflow:hidden;background:var(--green-deep);padding:0}
+.photoband img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;
+}
+.photoband::after{content:"";position:absolute;inset:0;background:rgba(21,55,42,.62)}
+.photoband .wrap{position:relative;z-index:2;padding-top:108px;padding-bottom:108px;text-align:center}
+.photoband h2{color:#fff;max-width:18ch;margin:0 auto .5em}
+.photoband p{color:rgba(255,255,255,.84);max-width:52ch;margin:0 auto;font-size:1.1rem}
+@media (max-width:720px){.photoband .wrap{padding-top:72px;padding-bottom:72px}}
+
+/* self-perform proof block */
+.proof{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:8px}
+.proof div{padding:30px 26px 30px 0}
+.proof div + div{padding-left:34px;border-left:1px solid rgba(255,255,255,.2)}
+.proof b{
+  display:block;font-family:var(--serif);font-size:3.6rem;line-height:1;
+  color:#fff;margin-bottom:.22em;
+}
+.proof span{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:#9FCDB4}
+@media (max-width:720px){
+  .proof{grid-template-columns:1fr}
+  .proof div + div{padding-left:0;border-left:0;border-top:1px solid rgba(255,255,255,.2)}
+  .proof b{font-size:2.8rem}
+}
+
+/* testimonial */
+.quote{text-align:center;max-width:800px;margin:0 auto}
+.quote blockquote{
+  font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.38;
+  color:var(--ink);margin:0 0 30px;font-weight:400;
+}
+.quote .attrib{font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-55)}
+.quote .qmark{
+  font-family:var(--serif);font-size:4rem;line-height:.6;color:var(--green);
+  display:block;margin-bottom:18px;
+}
+
+/* colour swatches */
+.swatches{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:8px}
+.swatch span{
+  display:block;aspect-ratio:1;border-radius:3px;border:1px solid rgba(21,24,28,.14);
+  margin-bottom:10px;
+}
+.swatch small{font-size:.78rem;color:var(--ink-70);display:block;line-height:1.35}
+@media (max-width:980px){.swatches{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:620px){.swatches{grid-template-columns:repeat(3,1fr);gap:14px}}
+
+
+/* ---- placeholder must win over section-scoped colour rules ---- */
+.placeholder,
+.stat b .placeholder,
+.stat .placeholder,
+.hdr-phone .placeholder,
+.contact-list .placeholder,
+.quote .placeholder,
+.sec-head .placeholder{
+  background:#FFF4CC;border:1px dashed #D9B23A;color:#6B5312;
+  padding:3px 9px;border-radius:3px;font-weight:600;
+}
+.stat b .placeholder{font-size:.82em;letter-spacing:0}
+.hdr-phone .placeholder{font-size:.95em;padding:2px 7px}
+.quote .placeholder{display:inline-block;line-height:1.4}
+
+/* ---- photo band: darker, and framed on the canopy not the skyline ---- */
+.photoband img{object-position:center 50%}
+.photoband::after{background:linear-gradient(rgba(21,55,42,.60),rgba(21,55,42,.80))}
+
+
+/* browser default is `figure{margin:1em 40px}` — reset it */
+figure,figure.shot{margin:0}
+blockquote{margin:0}

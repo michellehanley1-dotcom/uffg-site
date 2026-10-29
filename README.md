@@ -16,14 +16,16 @@ Every placeholder shows up on the site with a **yellow highlight** so you can't 
 | `tel:+17130000000` | `tel:+1` + the 10 digits, no spaces | all `.html` |
 | `info@uffgconstruction.com` | real email | all `.html` |
 | `uffgconstruction.com` | real domain (once you have one) | `contact.html`, `sitemap.xml`, `robots.txt` |
-| `Mon&ndash;Fri, 7am&ndash;5pm` | real hours | `contact.html` |
+| `Mon-Fri, 7am-5pm` | real hours | `contact.html` |
+| `3,200+` | real spaces-covered figure | `index.html` |
 
-Two numbers on the home page stat bar also need real values — in `index.html`, search for `XX` and `XXX`:
+Three more things are fabricated placeholders and MUST be replaced or removed before this is a real marketing site:
 
-- `XX+ Years building in Houston`
-- `XXX Structures completed`
+1. **Parking spaces covered (`3,200+`)** — made up. Put the real figure in `index.html`.
+2. **The testimonial on the home page** — the quote and the attribution are both obvious filler. Replace with a real quote from a real client, or delete the whole `<section class="sec-cream-2">` that contains `class="quote"`. Do not publish an invented quote attributed to a real-sounding person.
+3. **The six paint colors on the Services page** — standard metal building colors, not confirmed as yours. Fix the names and hex values in `site.css`/`services.html`, or delete the Colors and finishes section.
 
-If you'd rather not claim a number, delete those two `<div class="stat">…</div>` blocks and the bar will show the remaining two centered.
+The years (20) and structures (50+) figures are set as real values. Change them in `index.html` if they're wrong.
 
 **Last step:** once everything is filled in, delete the yellow highlight styling so the site looks finished. In `assets/css/site.css`, find the `.placeholder` block and change it to:
 

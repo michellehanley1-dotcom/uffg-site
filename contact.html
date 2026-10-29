@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Request a Quote — UFFG Construction | Houston, TX</title>
-<meta name="description" content="Request a quote for commercial covered parking, equipment canopies or steel structures in Houston and the Texas Gulf Coast.">
-<meta property="og:title" content="Request a Quote — UFFG Construction | Houston, TX">
-<meta property="og:description" content="Request a quote for commercial covered parking, equipment canopies or steel structures in Houston and the Texas Gulf Coast.">
+<title>Request a Quote | UFFG Construction | Texas</title>
+<meta name="description" content="Request a quote for commercial canopies, covered parking, equipment covers or canopy repairs anywhere in Texas.">
+<meta property="og:title" content="Request a Quote | UFFG Construction | Texas">
+<meta property="og:description" content="Request a quote for commercial canopies, covered parking, equipment covers or canopy repairs anywhere in Texas.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="hero-alt.jpg">
-<link rel="icon" href="stamp-green.svg" type="image/svg+xml">
+<link rel="icon" href="stamp-box-green.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
@@ -18,9 +18,11 @@
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="UFFG Construction — home">
-      <img src="lockup-green.svg" alt="UFFG Construction">
+    <a class="brand" href="index.html" aria-label="UFFG Construction home">
+      <img class="mark" src="stamp-box-green.svg" alt="UFFG Construction">
+      <span class="bname">UFFG<br>Construction</span>
     </a>
+    <a class="hdr-phone" href="tel:+17130000000"><span class="placeholder">(713) 000-0000</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" id="navToggle"><span></span></button>
     <nav class="nav" id="nav">
       <a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a>
@@ -34,7 +36,7 @@
     <span class="eyebrow on-dark">Contact</span>
     <h1>Request a quote.</h1>
     <div class="hero-rule"></div>
-    <p class="lede on-dark">Tell us about the property and what you need covered. We'll follow up to set a site visit.</p>
+    <p class="lede on-dark">Tell us about the property and what you need covered. We will follow up to schedule a site visit.</p>
   </div>
 </section>
 
@@ -48,79 +50,50 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://uffgconstruction.com/thank-you.html">
           <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
           <div class="form-grid">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="Name" type="text" required autocomplete="name">
-            </div>
-            <div class="field">
-              <label for="company">Company / property</label>
-              <input id="company" name="Company" type="text" autocomplete="organization">
-            </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="Phone" type="tel" required autocomplete="tel">
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="Email" type="email" required autocomplete="email">
-            </div>
-            <div class="field">
-              <label for="type">What do you need built?</label>
+            <div class="field"><label for="name">Name</label>
+              <input id="name" name="Name" type="text" required autocomplete="name"></div>
+            <div class="field"><label for="company">Company / property</label>
+              <input id="company" name="Company" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="phone">Phone</label>
+              <input id="phone" name="Phone" type="tel" required autocomplete="tel"></div>
+            <div class="field"><label for="email">Email</label>
+              <input id="email" name="Email" type="email" required autocomplete="email"></div>
+            <div class="field"><label for="type">What do you need built?</label>
               <select id="type" name="Project type">
                 <option>Commercial covered parking</option>
                 <option>Equipment or generator canopy</option>
                 <option>Walkway or entry canopy</option>
+                <option>MUD tank or monorail canopy</option>
                 <option>Screen wall or enclosure</option>
-                <option>Other steel structure</option>
+                <option>Repair to an existing canopy</option>
                 <option>Not sure yet</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="spaces">Approx. size or # of spaces</label>
-              <input id="spaces" name="Size or spaces" type="text" placeholder="e.g. 24 spaces, or 40' x 60'">
-            </div>
-            <div class="field full">
-              <label for="location">Property address or area</label>
-              <input id="location" name="Location" type="text" placeholder="City or full address">
-            </div>
-            <div class="field full">
-              <label for="msg">Project details</label>
-              <textarea id="msg" name="Details" placeholder="Timeline, budget range, site conditions, anything else we should know."></textarea>
-            </div>
+              </select></div>
+            <div class="field"><label for="spaces">Approx. size or number of spaces</label>
+              <input id="spaces" name="Size or spaces" type="text" placeholder="e.g. 24 spaces, or 40' x 60'"></div>
+            <div class="field full"><label for="location">Property address or area</label>
+              <input id="location" name="Location" type="text" placeholder="City or full address"></div>
+            <div class="field full"><label for="msg">Project details</label>
+              <textarea id="msg" name="Details" placeholder="Timeline, budget range, site conditions, anything else we should know."></textarea></div>
           </div>
           <div style="margin-top:28px"><button class="btn btn-primary" type="submit">Send Request</button></div>
-          <p class="form-note">We read every request. If it's urgent, call &mdash; that's faster than any form.</p>
+          <p class="form-note">We read every request. For urgent work, call.</p>
         </form>
       </div>
-
       <aside class="contact-panel">
         <h3>Talk to us directly</h3>
         <div class="contact-list">
-          <div>
-            <div class="k">Phone</div>
-            <div class="v"><a href="tel:+17130000000"><span class="placeholder">(713) 000-0000</span></a></div>
-          </div>
-          <div>
-            <div class="k">Email</div>
-            <div class="v"><a href="mailto:info@uffgconstruction.com"><span class="placeholder">info@uffgconstruction.com</span></a></div>
-          </div>
-          <div>
-            <div class="k">Service area</div>
-            <div class="v">Houston &amp; the Texas Gulf Coast</div>
-          </div>
-          <div>
-            <div class="k">Hours</div>
-            <div class="v"><span class="placeholder">Mon&ndash;Fri, 7am&ndash;5pm</span></div>
-          </div>
+          <div><div class="k">Phone</div><div class="v"><a href="tel:+17130000000"><span class="placeholder">(713) 000-0000</span></a></div></div>
+          <div><div class="k">Email</div><div class="v"><a href="mailto:info@uffgconstruction.com"><span class="placeholder">info@uffgconstruction.com</span></a></div></div>
+          <div><div class="k">Service area</div><div class="v">All of Texas. Based in Houston.</div></div>
+          <div><div class="k">Hours</div><div class="v"><span class="placeholder">Mon-Fri, 7am-5pm</span></div></div>
         </div>
         <hr style="border:0;border-top:1px solid var(--line);margin:30px 0">
         <h3 style="font-size:1.05rem">What happens next</h3>
         <ul class="ticks" style="gap:11px">
-          <li>We call back to confirm scope and schedule a site visit</li>
-          <li>We measure the area and check pier locations on site</li>
-          <li>You get a layout and a written, line-by-line proposal</li>
+          <li>We call to confirm scope and schedule a site visit</li>
+          <li>We measure the area and locate pier positions on site</li>
+          <li>You receive a layout and an itemized written proposal</li>
         </ul>
       </aside>
     </div>
@@ -131,8 +104,8 @@
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <img class="f-lockup" src="lockup-cream.svg" alt="UFFG Construction">
-        <p style="max-width:38ch">A steel construction company born from commercial covered structures. Houston, Texas.</p>
+        <img class="f-lockup" src="stamp-box-cream.svg" alt="UFFG Construction" style="height:62px">
+        <p style="max-width:42ch;margin-top:20px">Commercial canopies in steel. Based in Houston, building across Texas.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -149,7 +122,7 @@
         <ul>
           <li><a href="tel:+17130000000">(713) 000-0000</a></li>
           <li><a href="mailto:info@uffgconstruction.com">info@uffgconstruction.com</a></li>
-          <li>Houston &amp; the Texas Gulf Coast</li>
+          <li>Serving all of Texas</li>
         </ul>
       </div>
     </div>
